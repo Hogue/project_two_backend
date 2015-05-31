@@ -12,33 +12,32 @@
 Neighborhood.destroy_all
 #########################################################
 
-                    NEIGHBORHOODS
+                    # NEIGHBORHOODS #
+                          # & #
+                      # BATHROOMS #
 
 #########################################################
-Neighborhood.create!(name: 'Allston')
-Neighborhood.create!(name: 'Back Bay')
-Neighborhood.create!(name: 'Bay Village')
-Neighborhood.create!(name: 'Beacon Hill')
-Neighborhood.create!(name: 'Brighton')
-Neighborhood.create!(name: 'Charlestown')
-Neighborhood.create!(name: 'Chinatown')
-Neighborhood.create!(name: 'Dorchester')
-Neighborhood.create!(name: 'Downtown')
-Neighborhood.create!(name: 'East Boston')
-Neighborhood.create!(name: 'Fenway Kenmore')
-Neighborhood.create!(name: 'Hyde Park')
-Neighborhood.create!(name: 'Jamaica Plain')
-Neighborhood.create!(name: 'Mattapan')
-Neighborhood.create!(name: 'Mission Hill')
-Neighborhood.create!(name: 'North End')
-Neighborhood.create!(name: 'Roxbury')
-Neighborhood.create!(name: 'South Boston')
-Neighborhood.create!(name: 'South End')
-Neighborhood.create!(name: 'West End')
-#########################################################
-
-                      BATHROOMS
-
-#########################################################
+neighborhood = Neighborhood.create!(name: 'Allston')
+neighborhood = Neighborhood.create!(name: 'Back Bay')
+neighborhood = Neighborhood.create!(name: 'Bay Village')
+neighborhood = Neighborhood.create!(name: 'Beacon Hill')
+neighborhood = Neighborhood.create!(name: 'Brighton')
+neighborhood.bathrooms.create!(location: 'Dunkin Donuts', address: '598 Washington St
+Brighton, MA', description: 'bathrooms are free and accessible')
+neighborhood = Neighborhood.create!(name: 'Charlestown')
+neighborhood = Neighborhood.create!(name: 'Chinatown')
+neighborhood = Neighborhood.create!(name: 'Dorchester')
+neighborhood = Neighborhood.create!(name: 'Downtown')
+neighborhood = Neighborhood.create!(name: 'East Boston')
+neighborhood = Neighborhood.create!(name: 'Fenway Kenmore')
+neighborhood = Neighborhood.create!(name: 'Hyde Park')
+neighborhood = Neighborhood.create!(name: 'Jamaica Plain')
+neighborhood = Neighborhood.create!(name: 'Mattapan')
+neighborhood = Neighborhood.create!(name: 'Mission Hill')
+neighborhood = Neighborhood.create!(name: 'North End')
+neighborhood = Neighborhood.create!(name: 'Roxbury')
+neighborhood = Neighborhood.create!(name: 'South Boston')
+neighborhood = Neighborhood.create!(name: 'South End')
+neighborhood = Neighborhood.create!(name: 'West End')
 
 

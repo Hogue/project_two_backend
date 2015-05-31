@@ -18,7 +18,6 @@ class Neighborhoods < ApplicationController
     else
       render json: @neighborhood, status: :unprocessable_entity
     end
-
   end
 
   def update
@@ -29,7 +28,6 @@ class Neighborhoods < ApplicationController
     else
       render json: @neighborhood, status: :unprocessable_entity
     end
-
   end
 
   def destroy
