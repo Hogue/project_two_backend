@@ -12,8 +12,7 @@ Rails.application.routes.draw do
 
   resources :neighborhoods, except: [:new, :edit] do
 
-  resources :bathrooms, except: [:new, :edit]
-
+    resources :bathrooms, except: [:new, :edit]
   end
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

@@ -1,4 +1,4 @@
-class BathroomsController < ApplicationController
+class BathroomsController < ApiController
 
 
   before_action :set_neighborhood
@@ -16,7 +16,6 @@ class BathroomsController < ApplicationController
   end
 
   def create
-
     @bathroom = @neighborhood.bathrooms.build(bathroom_params)
     if @bathroom.save
       render json: @bathroom, status: :created

@@ -1,7 +1,8 @@
-class Neighborhoods < ApplicationController
+class NeighborhoodsController < ApiController
 
   def index
     @neighborhoods = Neighborhood.all
+    puts @neighborhoods
     render json: @neighborhoods
   end
 
@@ -11,7 +12,6 @@ class Neighborhoods < ApplicationController
   end
 
   def create
-
     @neighborhood = Neighborhood.new(neighborhood_params)
     if @neighborhood.save
       render json: @neighborhood, status: :created, location: neighborhoods_url
@@ -21,7 +21,6 @@ class Neighborhoods < ApplicationController
   end
 
   def update
-
     @neighborhood = Neighborhood.find(params[:id])
     if @neighborhood.update(movie_params)
       head :no_content
@@ -37,6 +36,7 @@ class Neighborhoods < ApplicationController
   end
 
   private
+
   def neighborhood_params
     params.require(:neighborhood).permit(:name)
   end
