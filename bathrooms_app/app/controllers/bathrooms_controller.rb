@@ -38,7 +38,7 @@ class BathroomsController < ApiController
   end
 
   def set_neighborhood
-    @neighborhood = Neighborhood.find(params[:neighborhood_params])
+    @neighborhood = Neighborhood.find(params[:neighborhood_id])
   end
 
 end

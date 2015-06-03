@@ -38,7 +38,7 @@ class NeighborhoodsController < ApiController
   private
 
   def neighborhood_params
-    params.require(:neighborhood).permit(:name)
+    params.require(:neighborhood).permit([:name])
   end
 
 end
