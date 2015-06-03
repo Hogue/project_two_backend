@@ -39,5 +39,10 @@ neighborhood = Neighborhood.create!(name: 'Roxbury')
 neighborhood = Neighborhood.create!(name: 'South Boston')
 neighborhood = Neighborhood.create!(name: 'South End')
 neighborhood = Neighborhood.create!(name: 'West End')
+#########################################################
 
+                        # Users #
+
+#########################################################
+User.create!(email: 'ajhogue6@gmail.com', password: 'hog94306')
 

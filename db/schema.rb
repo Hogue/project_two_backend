@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20150602195135) do
   enable_extension "plpgsql"
 
   create_table "bathrooms", force: :cascade do |t|
-    t.string   "location"
-    t.string   "address"
+    t.string   "location",        null: false
+    t.string   "address",         null: false
     t.text     "description"
     t.string   "image"
     t.integer  "neighborhood_id"
