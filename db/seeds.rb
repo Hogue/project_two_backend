@@ -24,6 +24,7 @@ neighborhood = Neighborhood.create!(name: 'Beacon Hill')
 neighborhood = Neighborhood.create!(name: 'Brighton')
 neighborhood.bathrooms.create!(location: 'Dunkin Donuts', address: '598 Washington St
 Brighton, MA', description: 'bathrooms are free and accessible')
+neighborhood.bathrooms.create!(location: 'Faneuil Branch - Boston Public Library', address: '419 Faneuil St, Brighton, MA 02135', description: 'closed Sunday, but otherwise hassle free')
 neighborhood = Neighborhood.create!(name: 'Charlestown')
 neighborhood = Neighborhood.create!(name: 'Chinatown')
 neighborhood = Neighborhood.create!(name: 'Dorchester')
@@ -44,5 +45,5 @@ neighborhood = Neighborhood.create!(name: 'West End')
                         # Users #
 
 #########################################################
-User.create!(email: 'ajhogue6@gmail.com', password: 'hog94306')
+
 
